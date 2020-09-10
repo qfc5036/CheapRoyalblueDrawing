@@ -4,25 +4,26 @@
 # Section: 8
 # Breakout: 11
 def getlettergrade(numbergrade):
+  numbergrade = float(numbergrade)
   if numbergrade >= 93.0:
-    lettergrade = "A"
+    out = "A"
   elif numbergrade >= 90.0:
-    lettergrade = "A-"
+    out = "A-"
   elif 90 >= numbergrade >= 87.0:
-    lettergrade = "B+"
+    out = "B+"
   elif 87 > numbergrade >= 83.0:
-   lettergrade = "B"
+    out = "B"
   elif 83 > numbergrade >= 80:
-   lettergrade = "B-"
+    out = "B-"
   elif 80 > numbergrade >= 77:
-   lettergrade = "C+"
+    out = "C+"
   elif 77 > numbergrade >= 70:
-   lettergrade = "C"
+    out = "C"
   elif 70 > numbergrade >= 60:
-   lettergrade = "D"
-  elif 60 > numbergrade >= 0:
-   lettergrade = "F"
-  return lettergrade
+    out = "D"
+  else:
+    out = "F"
+  return out
 
 def run():
  numbergrade = float(input("Enter your CMPSC 131 grade: "))
